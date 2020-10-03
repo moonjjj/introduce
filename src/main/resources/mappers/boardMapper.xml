@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="seon.je.moon.boardMapper">
+ 	<insert id="boardInsert" parameterType="seon.je.moon.vo.Board">
+		insert into board(bd_title, bd_content, bd_date) values(#{bd_title},#{bd_content},now());
+	</insert>
+	<select id="boardSelect" parameterType="seon.je.moon.vo.Board" resultType="seon.je.moon.vo.Board">
+		select * from board;
+	</select>
+	<select id="boardDetail" parameterType="int" resultType="seon.je.moon.vo.Board">
+		select * from board where bd_num=#{bd_num};
+	</select>
+	<update id="boardCnt" parameterType="int">
+		update board set bd_readCnt=bd_readCnt+1 where bd_num=#{bd_num};
+	</update>
+  </mapper>
