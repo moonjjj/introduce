@@ -8,9 +8,12 @@
 </head>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> <!--font awesome CDN 링크 -->
 <style>
+	body{
+		font-family:arial;
+	}
 	a{
 		text-decoration:none;
-		color:black;
+		color:white;
 	}
 	.top_navbar{
 		width:100%;
@@ -18,6 +21,9 @@
 		font-size: 60px;
     	text-align: center;
     	border-bottom: 5px solid;
+    	background: rgb(1 0 102);
+    	color: white;
+    	padding-top: 35px;
 	}
 	.content1, .content2{
 		display:flex;
@@ -25,7 +31,8 @@
 		align-items:center;
 	}
 	.content_all{
-	    margin-top: 70px;
+	    background:url(${pageContext.request.contextPath}/resources/image/night_sky.jpg) no-repeat center;
+	    color: white;
 	}
 	.boxcss{
 		width:300px;
@@ -36,7 +43,7 @@
     	text-align:center;
     	text-align: center;
     	font-size: 25px;
-    	box-shadow: 1px 1px 5px;
+    	box-shadow: 4px 1px 5px;
 	}
 	.boxcss:hover{
 		transition: transform 0.2s linear;
@@ -56,6 +63,8 @@
 		display: flex;
     	justify-content: center;
     	align-items: center;
+    	background: rgb(1 0 102);
+    	color:white;
 	}
 	@media screen and (max-width: 550px) {
 	    .content1,.content2{
@@ -72,8 +81,12 @@
 	
 </style>
 <body>
-	<div class="top_navbar"><span class="nav_name" style='transform:none;'><i class="far fa-moon"></i> MoonJeSeon <i class="far fa-sun"></i></span></div>
-	
+	<div class="top_navbar">
+		<span class="nav_name">
+			<i class="far fa-moon"></i> MoonJeSeon <i class="far fa-sun"></i>
+		</span>
+	</div>
+
 	<div class="content_all">
 		<div class="content1">
 			<div class="content_box1 boxcss">
@@ -106,7 +119,7 @@
 	</div>
 	
 	<div class="footer">
-		<a>👤 문제선 / 📱 010.6335.9627</a>
+		<p>👤 문제선 / 📱 010.6335.9627</p>
 	</div>
 		<script>
 			document.getElementsByClassName('nav_name').addEventListener('click',function(){

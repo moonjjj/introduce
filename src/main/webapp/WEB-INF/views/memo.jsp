@@ -53,6 +53,40 @@
 		top:20px;
 		font-size:40px;
 	}
+	
+	.transform_div2{
+		height:80vh;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction: column;
+		prespective: 500px;
+	}
+	.text{
+		font-size:50px;
+		font-weight:900;
+		cursor:pointer;
+	}
+	.box{
+		width:350px;
+		height:100px;
+		background-color:springgreen;
+		margin:60px auto;
+		cursor:pointer;
+	}
+	
+	.text:hover, .box:hover{
+		animation: flipV 1s linear;
+	}
+	
+	@keyframes flipV{
+		50%{
+			transform:rotateX(180deg);
+		}
+		to{
+			transform: rotateX(360deg);
+		}
+	}
 </style>
 <body>
 	<a href="/"><i class="fas fa-home"></i></a>
@@ -97,7 +131,8 @@
 		</div>
 	</div>
 	<div class="transform_div2">
-		<h3>음</h3>
+		<div class="text">FLIP ANIMATION</div>
+		<div class="box"></div>
 	</div>
 </body>
 </html>

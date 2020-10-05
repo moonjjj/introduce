@@ -157,6 +157,14 @@
 		border-radius:10px;
 		padding: 5px 30px 13px;
 	}
+	#git_input{
+		font-size: 30px;
+	    width: 500px;
+	    text-align: center;
+	    border-radius: 10px;
+	    padding: 5px;
+	    margin-top: 40px;
+	}
 </style>
 <body>
 <div class="info_card">
@@ -171,9 +179,9 @@
 			<div class="icon">
 				<a href="https://www.facebook.com/profile.php?id=100005624622614"><i class="fab fa-facebook-f"></i></a>
 				<a href="${pageContext.request.contextPath}/resources/image/introduce_pdf.pdf"><i class="fas fa-user-tie"></i></a>
-				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="https://github.com/moonjjj"><i class="fab fa-github"></i></a>
 			</div>
-			<a class="contact-btn" id="contact" onclick="scrollbottom()">click here</a>
+			<a class="contact-btn" id="contact" onclick="scrollbottom()">more info</a>
 		</div>
 		<div class="card-footer">
 			<div class="numbers">
@@ -193,12 +201,12 @@
 		</div>
 	</div>
 </div>
-<div class="info_detail1" style="position:absolute; top: 100vh; width: 100%;">
+<div class="info_detail1" style="top: 100vh; width: 100%;">
 	<p class="greetings">안녕하세요. 프론트엔드 개발자가 되고싶은 문제선입니다.</p>
 	<div class="introduce">
-		<p>보유기술 및 경력 :  html(상) css(상) javascript(중) / 클라우드 기반의 개발자 양성과정 수료</p>
+		<p>보유기술 및 경력 :  html(중상) css(중상) javascript(중) / 클라우드 기반의 개발자 양성과정 수료</p>
 	</div>
-	<input id="myInput" value="https://github.com/moonjjj">
+	<input id="git_input" value="https://github.com/moonjjj">
 	<button onclick="copy_to_clipboard()" class="go_git_button"><p class="go_git_p">Copy GitHub URL <i class="fab fa-github"></i></p></button>
 </div>
 </body>
@@ -212,7 +220,7 @@
 	}
 	//주소 복사 스크립트
 	function copy_to_clipboard() {
-		  var copyText = document.getElementById("myInput");
+		  var copyText = document.getElementById("git_input");
 		  copyText.select();
 		  document.execCommand("Copy");
 		  alert('복사 완료');
