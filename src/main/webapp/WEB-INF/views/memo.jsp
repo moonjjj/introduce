@@ -131,7 +131,7 @@
 		</div>
 	</div>
 	<div class="transform_div2">
-		<div class="text">FLIP ANIMATION</div>
+		<div class="text">FLIP ANIMATION!</div>
 		<div class="box"></div>
 	</div>
 </body>
