@@ -113,7 +113,7 @@
 				<a href="memo"><img src="${pageContext.request.contextPath}/resources/image/memo.jpg"></a>
 			</div>
 			<div class="content_box3 boxcss">
-				<a href="perfume">new</a>
+				<a href="perfume">new things</a>
 			</div>
 		</div>
 	</div>
