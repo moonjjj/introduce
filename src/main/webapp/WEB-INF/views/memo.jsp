@@ -63,7 +63,7 @@
 		prespective: 500px;
 	}
 	.text{
-		font-size:51px;
+		font-size:50px;
 		font-weight:900;
 		cursor:pointer;
 	}
