@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <style>
 	.table{
-		width: 550px;
+		width: 552px;
 		border: 1px solid;
     	margin: 30px;
     	text-align: center;

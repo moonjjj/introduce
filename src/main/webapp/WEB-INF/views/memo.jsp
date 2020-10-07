@@ -76,7 +76,7 @@
 	}
 	
 	.text:hover, .box:hover{
-		animation: flipV 1s linear;
+		animation: flipV 1s linear infinite;
 	}
 	
 	@keyframes flipV{
@@ -84,8 +84,43 @@
 			transform:rotateX(180deg);
 		}
 		to{
-			transform: rotateX(360deg);
+			transform: rotateX(360deg) infinite;
 		}
+	}
+	
+	.transform_div3{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.div3_box{
+		font-size:30px;
+		text-align:center;
+		border:1px solid;
+		width:200px;
+		height:200px;
+		color:green;
+		margin:20px;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.box1:hover{
+		transform:rotate(45deg);
+	}
+	.box2, .in_box2{
+		background-color:green;
+		height:150px;
+		width:150px;
+	}
+	.box2{
+		background-color:yellow;
+		border:1px solid black;
+	}
+	.in_box2:hover{
+		backface-visibility:vivible;
+		transform-origin:50% 42%;
+		transform:perspective(500px) rotateY(59deg) rotateX(0deg);
 	}
 </style>
 <body>
@@ -133,6 +168,13 @@
 	<div class="transform_div2">
 		<div class="text">FLIP ANIMATION!</div>
 		<div class="box"></div>
+	</div>
+	<div class="transform_div3">
+		<div class="div3_box box1">box1</div>
+		<div class="div3_box box2"><div class="in_box2">box2</div></div>
+		<div class="div3_box box3">box3</div>
+		<div class="div3_box box4">box4</div>
+		<div class="div3_box box5">box5</div>
 	</div>
 </body>
 </html>
