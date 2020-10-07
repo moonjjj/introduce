@@ -42,4 +42,8 @@ public class BoardController {
 	public String introduce() {
 		return "introduce";
 	}
+	@RequestMapping(value = "response", method = RequestMethod.GET)
+	public String response() {
+		return "response";
+	}
 }
