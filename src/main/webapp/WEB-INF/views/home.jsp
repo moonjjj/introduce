@@ -52,7 +52,7 @@
 	img{
 	    width: 300px;
 	    height: 250px;
-	    margin-top: 16px;
+	    margin-top: 15px;
 	    border: 1px solid black;
 	}
 	.footer{
